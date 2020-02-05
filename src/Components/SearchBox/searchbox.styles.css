@@ -1,0 +1,25 @@
+.searchbox{
+    
+           display: flex;
+           flex-direction: column;
+        border: none;
+        outline: none;
+        padding: 7px;
+        width: 200px;
+        line-height: 30px;
+        margin: 30px auto;
+        border-radius: 5px;
+        padding-right: 15px;
+        transition: all .2s ease-in-out;
+        
+}
+.searchbox::placeholder{
+    text-align: center !important;
+    transition: all .3s;
+}
+.searchbox:focus{
+    width: 350px; 
+}
+.searchbox:focus::placeholder{
+    transform: translate(108px) !important;
+}
